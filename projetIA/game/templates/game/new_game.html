@@ -1,0 +1,10 @@
+{% load static %} {% csrf_token %}
+
+<html>
+    <body>
+        <script src="{% static 'game/move.js' %}"></script>
+        <title>Game</title>
+        <p><div id="my_board">{{board}}</div></p>
+        <button id="my_button">Move</button>
+    </body>
+</html>

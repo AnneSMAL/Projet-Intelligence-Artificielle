@@ -1,0 +1,13 @@
+{% load static %}
+
+<html>
+  <body>
+    <title>Connexion</title>
+    <h1>Welcome</h1>
+    <form method="POST" action="/connexion/">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit"/>
+    </form>
+  </body>
+</html>
